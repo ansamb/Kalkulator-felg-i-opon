@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kalkulator felg i opon</string>
+    <string name="action_settings">Settings</string>
+    <string name="szerokosc_text">Szerokość</string>
+    <string name="ukosnik">\"/\"</string>
+    <string name="ukos"> / </string>
+    <string name="wstep">1. Podaj obecny rozmiar</string>
+    <string name="cal">" R "</string>
+    <string name="profil_text">Profil</string>
+    <string name="srednica_text">Średnica</string>
+    <string name="header">Kalkulator doboru rozmiaru felgi</string>
+    <string name="oblicz">OBLICZ</string>
+
+    <string-array name="szerokosc_opony">
+        <item></item>
+        <item>135</item>
+        <item>145</item>
+        <item>155</item>
+        <item>165</item>
+        <item>175</item>
+        <item>185</item>
+        <item>195</item>
+        <item>205</item>
+        <item>215</item>
+        <item>225</item>
+        <item>235</item>
+        <item>245</item>
+        <item>255</item>
+        <item>265</item>
+        <item>275</item>
+        <item>285</item>
+    </string-array>
+    <string-array name="profil_opony">
+        <item></item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+    </string-array>
+    <string-array name="srednica_opony">
+        <item></item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string name="minSzerokosc">Min szerokość felgi:  </string>
+    <string name="maxSzerokosc">Max szerokość felgi:  </string>
+    <string name="optSzerokosc">Opt szerokość felgi:  </string>
+    <string name="minSzerokoscWynik" />
+    <string name="maxSzerokoscWynik" />
+    <string name="optSzerokoscWynik" />
+    <string name="minSzerokoscWynikOpis" />
+    <string name="maxSzerokoscWynikOpis" />
+    <string name="optSzerokoscWynikOpis" />
+    <string name="title_activity_start">StartActivity</string>
+    <string name="changeOpony">Sprawdź czy nowa opona jest odpowiednia</string>
+    <string name="changeFelgi">Dobierz felgę do opony</string>
+    <string name="hederStart">Kalkulator doboru felg i opon</string>
+    <string name="title_activity_opony">OponyActivity</string>
+    <string name="opis" />
+    <string name="title_activity_felgi">FelgiActivity</string>
+    <string name="wstep2">3. Podaj nowe parametry </string>
+    <string name="pusty" />
+    <string name="srednicaKola_text">Średnica (mm):</string>
+    <string name="srednicaKolaObecna" />
+    <string name="srednicaKolaNowa" />
+    <string name="roznicaWSrednicyKola" />
+    <string name="roznicaWSrednicyKola_text">Różnica średnic (mm):</string>
+    <string name="predkoscPrzyklad">Różnica w prędkości przy 100 km/h:</string>
+    <string name="predkoscPrzykladWynik" />
+    <string name="roznicaWPredkosci_text">Różnica średnic (%):</string>
+    <string name="roznicaWPredkosciWynik" />
+    <string name="powrot">MENU GŁÓWNE</string>
+    <string name="reset">RESETUJ</string>
+    <string name="wstepFelgi">Obecna szerokość opony</string>
+    <string name="mozliwyZakresFelgi">Zakres szerokości felgi możliwy do zastosowania (w calach):</string>
+    <string name="title_activity_opony2">Opony2Activity</string>
+    <string name="coZmienic">2. Wybierz parametr(y) do zmiany (max 2)</string>
+    <string name="result"></string>
+    <string name="zamienniki">ZAMIENNIKI</string>
+    <string name="changeOpony2">Sprawdź zamienniki opony w 3 krokach</string>
+    <string name="srednicaKola_textO2">Średnica koła (mm):</string>
+    <string name="pusty1">"?"</string>
+    <string name="pusty2">&quot;!&quot;</string>
+    <string name="dopuszczalnaGranica_textO2">Dopuszczalna średnica nowego koła (mm)</string>
+    <string name="dopuszczalnaGranicaO2"/>
+    <string name="daneDomyslne">Zapamiętaj dane</string>
+    <string name="changeOponyO2">Sprawdź zamienniki opony w 3 krokach</string>
+    <string name="chk_szerokosc">szerokość</string>
+    <string name="chk_profil">profil</string>
+    <string name="chk_srednica">średnica</string>
+    <string name="wstep2O">Nowy rozmiar</string>
+    <string name="wstepO">Obecny rozmiar</string>
+
+
+</resources>

@@ -1,0 +1,332 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    tools:context=".OponyActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:text="@string/changeOpony"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pusty"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="@string/pusty" />
+
+        <TextView
+            android:id="@+id/wstepO"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/wstepO"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/wstep2O"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/wstep2O"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp" >
+
+        <TextView
+            android:id="@+id/szerokosc_text"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/szerokosc_text" />
+
+        <Spinner
+            android:id="@+id/szerokosc"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:entries="@array/szerokosc_opony" />
+
+        <Spinner
+            android:id="@+id/szerokosc1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:entries="@array/szerokosc_opony" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp" >
+
+        <TextView
+            android:id="@+id/profil_text"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/profil_text" />
+
+        <Spinner
+            android:id="@+id/profil"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:entries="@array/profil_opony" />
+
+        <Spinner
+            android:id="@+id/profil1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:entries="@array/profil_opony" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp" >
+
+        <TextView
+            android:id="@+id/srednica_text"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/srednica_text" />
+
+        <Spinner
+            android:id="@+id/srednica"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:entries="@array/srednica_opony" />
+
+        <Spinner
+            android:id="@+id/srednica1"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:entries="@array/srednica_opony" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="150dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/oblicz"
+            android:layout_width="112dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/oblicz"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:paddingRight="20dp" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/srednicaKola_text"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/srednicaKola_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/srednicaKolaObecna"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/srednicaKolaObecna"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/srednicaKolaNowa"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="@string/srednicaKolaNowa"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/roznicaWSrednicyKola_text"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/roznicaWSrednicyKola_text"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/pusty1"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3"
+                    android:text="@string/pusty1"
+                    android:textScaleX="1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/roznicaWSrednicyKola"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.7"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="@string/roznicaWSrednicyKola"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/roznicaWPredkosci_text"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/roznicaWPredkosci_text"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/pusty2"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/pusty2"
+                    android:textScaleX="1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/roznicaWPredkosciWynik"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.7"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="@string/roznicaWPredkosciWynik"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/predkoscPrzyklad"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/predkoscPrzyklad"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/predkoscPrzykladWynik"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:text="@string/predkoscPrzykladWynik"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/powrot"
+                    android:layout_width="112dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/powrot"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="112dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="@string/reset"
+                    android:textSize="12sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

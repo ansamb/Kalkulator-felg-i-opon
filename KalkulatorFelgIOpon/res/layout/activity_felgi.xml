@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".FelgiActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/header1"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:gravity="center"
+            android:text="@string/changeFelgi"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="318dp"
+            android:layout_height="80dp"
+            android:background="#fff"
+            android:contentDescription="@string/opis"
+            android:padding="3dp"
+            android:paddingBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/opona5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/wstepFelgi"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:gravity="center"
+            android:text="@string/wstepFelgi"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp" >
+
+        <Spinner
+            android:id="@+id/szerokosc1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/szerokosc_opony"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/oblicz1"
+            android:layout_width="112dp"
+            android:layout_height="39dp"
+            android:text="@string/oblicz"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/mozliwyZakresFelgi"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/mozliwyZakresFelgi"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/minSzerokosc"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="@string/minSzerokosc"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/minSzerokoscWynik"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="@string/minSzerokoscWynik"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp" >
+
+                <TextView
+                    android:id="@+id/maxSzerokosc"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="@string/maxSzerokosc"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/maxSzerokoscWynik"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="@string/maxSzerokoscWynik"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/optSzerokosc"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="@string/optSzerokosc"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/optSzerokoscWynik"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:text="@string/optSzerokoscWynik"
+                    android:textColor="@color/text_color_green"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp" >
+
+                <Button
+                    android:id="@+id/powrot1"
+                    android:layout_width="112dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/powrot"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/reset1"
+                    android:layout_width="112dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="@string/reset"
+                    android:textSize="12sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

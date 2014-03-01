@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:scrollbars="horizontal"
+    android:visibility="visible"
+    tools:context=".Opony2Activity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/headerO2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/changeOponyO2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/wstepO2"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:gravity="left"
+            android:text="@string/wstep"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/szerokosc_textO2"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/szerokosc_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/profil_textO2"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/profil_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/srednica_textO2"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:text="@string/srednica_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" >
+
+        <Spinner
+            android:id="@+id/szerokoscO2"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:entries="@array/szerokosc_opony" />
+
+        <Spinner
+            android:id="@+id/profilO2"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:entries="@array/profil_opony" />
+
+        <Spinner
+            android:id="@+id/srednicaO2"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:entries="@array/srednica_opony" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/coZmienicO2"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:text="@string/coZmienic"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkBoxOptionsO2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:onClick="onCheckboxClicked"
+            android:paddingRight="20dp"
+            android:text="@string/chk_szerokosc"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:onClick="onCheckboxClicked"
+            android:paddingRight="20dp"
+            android:text="@string/chk_profil"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/chk_srednica"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/wstep2O2"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:text="@string/wstep2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" >
+
+        <Spinner
+            android:id="@+id/szerokosc1O2"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:entries="@array/szerokosc_opony" />
+
+        <Spinner
+            android:id="@+id/profil1O2"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:entries="@array/profil_opony" />
+
+        <Spinner
+            android:id="@+id/srednica1O2"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:entries="@array/srednica_opony" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/obliczO2"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="@string/oblicz"
+                    android:textSize="12sp" />
+            </TableRow>
+<!--
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/srednicaKola_textO2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/srednicaKola_textO2"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/srednicaKolaObecnaO2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/srednicaKolaObecna"
+                    android:textColor="@color/text_color_red"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/dopuszczalnaGranica_textO2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/dopuszczalnaGranica_textO2"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dopuszczalnaGranicaO2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/dopuszczalnaGranicaO2"
+                    android:textColor="@color/text_color_red"
+                    android:textSize="12sp" />
+            </TableRow>
+-->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/zamiennikiO2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zamienniki"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/textView2O2"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity=""
+                    android:paddingTop="10dp"
+                    android:text="@string/result"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/powrotO2"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/powrot"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/resetO2"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/reset"
+                    android:textSize="12sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
